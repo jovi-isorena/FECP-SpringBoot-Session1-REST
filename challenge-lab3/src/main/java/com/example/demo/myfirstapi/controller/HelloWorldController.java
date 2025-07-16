@@ -44,7 +44,6 @@ public class HelloWorldController {
         info.put("status","Running");
         return info;
     }
-
     @GetMapping("/features")
     public List<String> getFeatures(){
         return Arrays.asList("REST API", "Spring Boot", "Easy Setup", "Fast Development");

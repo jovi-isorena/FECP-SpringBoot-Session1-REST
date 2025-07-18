@@ -2,8 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/challenge-lab2" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/challenge-lab3" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/springboot-crashcourse/session2/calculator-tdd-style/TDDCalculator" vcs="Git" />
   </component>
 </project>

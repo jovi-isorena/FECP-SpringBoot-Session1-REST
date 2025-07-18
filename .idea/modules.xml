@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/FECP-SpringBoot-Session1-REST.iml" filepath="$PROJECT_DIR$/.idea/FECP-SpringBoot-Session1-REST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springboot-crashcourse.iml" filepath="$PROJECT_DIR$/.idea/springboot-crashcourse.iml" />
     </modules>
   </component>
 </project>

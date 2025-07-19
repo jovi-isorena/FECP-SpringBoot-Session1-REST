@@ -52,6 +52,12 @@ public class ProductRepository {
      * @return The saved or updated product.
      */
     public Product save(Product product) {
+        if(product.getName().isEmpty()){
+            throw new IllegalArgumentException("Product name should not be empty.");
+        }
+        if(product.getPrice() < 0){
+            throw new IllegalArgumentException("Product price should not be less than 0.");
+        }
         if (product.getId() == null) {
             // New product: assign a new ID and add to list
             product.setId(nextId.getAndIncrement());
@@ -69,8 +75,9 @@ public class ProductRepository {
             }
             // If ID was provided but not found, you might want to throw an exception
             // For this lab, we'll just return the product, but it wasn't added/updated
-            System.out.println("Product with ID " + product.getId() + " not found for update.");
-            return product; // Or throw new IllegalArgumentException("Product not found for update");
+//            System.out.println("Product with ID " + product.getId() + " not found for update.");
+            throw new IllegalArgumentException("Product with ID " + product.getId() + " not found for update");
+//            return product; // Or throw new IllegalArgumentException("Product not found for update");
         }
     }
 
